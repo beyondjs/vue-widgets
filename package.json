@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@beyond-js/widgets": "0.0.10",
+    "vue": "^3.2.33"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "page",
+  "platforms": "ssr",
+  "bundle": "code",
+  "vue": {
+    "files": "*"
+  },
+  "ts": {
+    "files": "*"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "page",
+  "platforms": [
+    "web",
+    "android",
+    "ios"
+  ],
+  "bundle": "code",
+  "vue": {
+    "files": "*"
+  },
+  "ts": {
+    "files": "*"
+  }
+}
