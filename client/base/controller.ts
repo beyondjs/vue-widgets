@@ -2,6 +2,8 @@ import {WidgetClientController} from '@beyond-js/widgets/controller';
 import {createApp, createSSRApp} from 'vue';
 import {Wrapper} from './wrapper';
 
+declare const require: (module: string) => any;
+
 export /*bundle*/
 abstract class VueWidgetController extends WidgetClientController {
     #wrapper: Wrapper;

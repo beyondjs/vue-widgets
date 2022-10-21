@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.19.0"
   }
 }
