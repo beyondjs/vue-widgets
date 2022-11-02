@@ -2,6 +2,8 @@ import {WidgetServerController, IWidgetRendered} from "@beyond-js/widgets/contro
 import {createSSRApp} from 'vue';
 import {renderToString} from 'vue/server-renderer';
 
+declare const require: (module: string) => any;
+
 export /*bundle*/
 abstract class VueWidgetController extends WidgetServerController {
     async render(props: Record<string, any>): Promise<IWidgetRendered> {
