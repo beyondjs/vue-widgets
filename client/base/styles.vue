@@ -6,8 +6,8 @@
 export default {
   props: ['styles'],
   methods: {
-    onloaded(url) {
-      this.styles.onloaded(url);
+    onloaded(event) {
+      this.styles.onloaded(event);
     }
   },
   data() {

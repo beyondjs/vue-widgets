@@ -7,7 +7,7 @@
 import Styles from './styles.vue';
 
 export default {
-  props: ['wrapper', 'holder', 'props', 'styles'],
+  props: ['wrapper', 'props', 'styles', 'holder'],
   components: {Styles},
   methods: {
     widget() {
