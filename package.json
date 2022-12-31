@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "vue": "^3.2.45"
-  },
-  "devDependencies": {
-    "@babel/types": "^7.20.5"
-  }
-}

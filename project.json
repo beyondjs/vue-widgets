@@ -6,11 +6,13 @@
   "modules": {
     "path": "./"
   },
-  "libraries": {
-    "imports": [
-      "@beyond-js/kernel",
-      "@beyond-js/widgets"
-    ]
+  "dependencies": {
+    "vue": "^3.2.45",
+    "@beyond-js/kernel": "^0.1.5",
+    "@beyond-js/widgets": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.20.5"
   },
   "deployment": {
     "distributions": [
