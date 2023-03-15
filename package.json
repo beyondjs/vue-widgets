@@ -1,7 +1,7 @@
 {
-  "scope": "beyond-js",
-  "name": "vue-widgets",
-  "version": "0.1.1",
+  "name": "@beyond-js/vue-widgets",
+  "version": "0.1.2",
+  "description": "Create web projects as standalone microfrontends with Vue.js.",
   "license": "MIT",
   "modules": {
     "path": "./"
