@@ -1,47 +1,41 @@
 {
-  "name": "@beyond-js/vue-widgets",
-  "version": "0.1.2",
-  "description": "Create web projects as standalone microfrontends with Vue.js.",
-  "license": "MIT",
-  "modules": {
-    "path": "./"
-  },
-  "libraries": {
-    "imports": [
-      "@beyond-js/kernel",
-      "@beyond-js/widgets"
-    ]
-  },
-  "deployment": {
-    "distributions": [
-      {
-        "name": "web",
-        "platform": "web",
-        "ports": {
-          "bundles": 9118
-        },
-        "ts": {
-          "compiler": "tsc"
-        }
-      },
-      {
-        "name": "ssr",
-        "platform": "ssr",
-        "ports": {
-          "bundles": 9119
-        },
-        "ts": {
-          "compiler": "tsc"
-        }
-      }
-    ]
-  },
-  "dependencies": {
-    "vue": "^3.2.45",
-    "@beyond-js/kernel": "~0.1.8",
-    "@beyond-js/widgets": "~0.1.3"
-  },
-  "devDependencies": {
-    "@babel/types": "^7.20.5"
-  }
+	"name": "@beyond-js/vue-widgets",
+	"version": "1.1.0",
+	"description": "Create web projects as standalone microfrontends with Vue.js.",
+	"license": "MIT",
+	"modules": {
+		"path": "./modules"
+	},
+	"deployment": {
+		"distributions": [
+			{
+				"name": "web",
+				"platform": "web",
+				"ports": {
+					"bundles": 9118
+				},
+				"ts": {
+					"compiler": "tsc"
+				}
+			},
+			{
+				"name": "ssr",
+				"platform": "ssr",
+				"ports": {
+					"bundles": 9119
+				},
+				"ts": {
+					"compiler": "tsc"
+				}
+			}
+		]
+	},
+	"dependencies": {
+		"vue": "^3.2.45",
+		"@beyond-js/kernel": "~0.1.8",
+		"@beyond-js/widgets": "~1.1.0"
+	},
+	"devDependencies": {
+		"@babel/types": "^7.20.5"
+	}
 }
