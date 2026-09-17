@@ -1,41 +1,7 @@
-# Welcome to `@beyond-js/vue-widgets` package
+# @beyond-js/vue-widgets
 
-`@beyond-js/vue-widgets` is a package for [BeyondJS](https://beyondjs.com), which is a platform for creating web projects as independent microfrontends. This package is built on `@beyond-js/widgets`, and allows developers to use the Vue.js framework in BeyondJS projects in a simple and straightforward way.
+Vue 3 rendering controllers for Beyond Widgets. Read [architecture, public APIs and lifecycle](docs/architecture.md) for setup, mounting, styles/HMR, routing, server rendering and known gaps.
 
-## Features
+Public imports are `@beyond-js/vue-widgets/base` and `/page`; client/server platform selection chooses their implementation. Source files are authored as Beyond modules and require TypeScript plus the vue processor. The [manifest](package.json) declares framework/core dependencies and distributions; installing dependencies alone does not create a runnable application or server.
 
--   Easy integration of Vue.js into BeyondJS projects
--   Built on the extensible `@beyond-js/widgets` package
-
-## Getting Started
-
-1. Install the `@beyond-js/vue-widgets` package in your BeyondJS project:
-
-```
-npm install @beyond-js/vue-widgets
-```
-
-2. Add the `vue` processor to the bundle configuration in the `module.json` file:
-
-```json
-{
-    "bundleName": {
-        "vue": {
-            "ts": {
-                "path": "vue", // Folder where you can store your React components as single-file components.
-                "files": "*"
-            }
-        }
-    }
-}
-```
-
-> In this configuration, "bundleName" should be replaced with the actual name of your bundle.
-
-## Contributing
-
-We welcome contributions to `@beyond-js/vue-widgets`. If you'd like to contribute, please read the [Contribution Guidelines](https://beyondjs.com/docs/contributing).
-
-## License
-
-`@beyond-js/vue-widgets` is [MIT licensed](LICENSE).
+Unmount is currently empty, and refresh/styles have documented limitations. Per-widget server render methods do not constitute a full SSR service or prove hydration compatibility. Use the local guide's verification cases before promising lifecycle or update behavior.
